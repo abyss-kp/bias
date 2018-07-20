@@ -1,0 +1,19 @@
+<p>
+  signup works!
+</p>
+<button routerLink="/login">If already a user click here</button>
+<button routerLink="/">Home</button>
+<div class="box">Email:<br> <input [(ngModel)]="email"type="text" placeholder="abc@xyz.com"><br>
+  {{email}}<br>
+  Name:<br> <input [(ngModel)]="name"type="text" placeholder="abc"><br>
+  {{name}}<br>
+  Phone:<br> <input [(ngModel)]="phone" type="text" placeholder="123"><br>
+  {{phone}}<br>
+  Password: <br><input [(ngModel)]="password" type="password" placeholder="password"><br>
+  {{password}}<br>
+  <button class="button" (click)="funtn1()"><span>SignUp</span></button>
+  <br>
+  </div>
+  <div *ngIf="false" id="msg"class="alert alert-danger">
+          {{message}}
+  </div>
